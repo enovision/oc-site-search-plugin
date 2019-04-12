@@ -19,6 +19,8 @@
         'blog_posturl_comment'       => 'Only specify the fixed part of the URL without any dynamic parameters',
         'blog_page'                  => 'Blog post page',
         'blog_page_comment'          => 'Select a page used to display a single blog post. Needed to form URL for posts.',
+        'blog_category'              => 'Blog post category',
+        'blog_category_comment'      => 'Select a page used to display categories. Needed to form URL for categories.',
         'album_page'                 => 'Album page',
         'album_page_comment'         => 'Select a page used to display a photo album. Needed to form URL for albums.',
         'photo_page'                 => 'Photo page',
