@@ -36,6 +36,13 @@ tabs:
             label: offline.sitesearch::lang.settings.blog_page
             comment: offline.sitesearch::lang.settings.blog_page_comment
             span: auto
+        rainlab_blog_category:
+            type: dropdown
+            options: blogCategoryOptions
+            tab: RainLab.Blog
+            label: offline.sitesearch::lang.settings.blog_category
+            comment: offline.sitesearch::lang.settings.blog_category_comment
+            span: auto
 
         rainlab_pages_enabled:
             type: switch
