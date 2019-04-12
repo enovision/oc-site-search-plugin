@@ -67,6 +67,12 @@ class RainlabBlogResultsProvider extends ResultsProvider
                 $result->url = $this->getUrl($post);
             }
 
+            if ( $post && $post->categories->count() ) {
+                $post->categories->each( function ( $category ) {
+                    $category->setUrl( Settings::get('rainlab_blog_category', ''), $this->controller );
+                } );
+            }
+
             $result->thumb = $this->getThumb($post->featured_images);
 
             $this->addResult($result);
