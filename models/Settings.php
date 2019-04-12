@@ -25,4 +25,17 @@ class Settings extends Model
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
+
+    /**
+     *
+     * Returns categories list for blog category selection
+     *
+     * @param null $keyValue
+     * @param null $fieldName
+     * @return mixed
+     */
+    public function blogCategoryOptions($keyValue = null, $fieldName = null)
+    {
+        return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
+    }
 }
